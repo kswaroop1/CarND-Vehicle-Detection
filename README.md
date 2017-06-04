@@ -114,7 +114,7 @@ Code in 13th cell defines class `Vehicles` that is used to track detections over
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Initial difficulty in this assignment was on finguring out the correct features (hog/channels) to train the claissfier.  I took guidance from the material in the lessons and depicted results of various combinations.
+Initial difficulty in this assignment was on figuring out the correct features (hog/channels) to train the claissfier.  I took guidance from the material in the lessons and depicted results of various combinations.
 
 Next set of difficulties were in getting the cars to be recognised, I eventually settled on 2 scales with 75% overlap in sliding windows.  I had tried 3 scales, but didn't get enough time to check if that will help improve detection.  I eventually limited the windows by limiting not only overall area of interest, but further limiting the search area for each of the two scales.  There were some false positives, and the run time per frame turned out to be very slow.
 
